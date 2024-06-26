@@ -1,5 +1,14 @@
 <html>
   <head>
+    <script>
+window.onerror = (a, b, c, d, e) => {
+  console.log(`message: ${a}`);
+  console.log(`source: ${b}`);
+  console.log(`lineno: ${c}`);
+  console.log(`colno: ${d}`);
+  console.log(`error: ${e}`);
+};
+    </script>
     <style>
       html, head, body {
         background: #fff;
