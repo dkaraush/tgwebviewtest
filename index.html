@@ -55,7 +55,7 @@ window.onerror = (a, b, c, d, e) => {
     />
 <script>
         function handleFileChange(event) {
-                alert(`${event.target.files.length} files selected: ${event.target.files.map(f => f.name).join(', ')}`);
+                alert(`${event.target.files.length} files selected: ${[...event.target.files].map(f => f.name).join(', ')}`);
         }
     </script>
   </body>
