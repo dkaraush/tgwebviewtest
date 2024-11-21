@@ -47,21 +47,13 @@ window.onerror = (a, b, c, d, e) => {
         accept="image/*"
         multiple
         onChange="handleFileChange(event)"
-        id="fileInput"
-        style="display: none;"
     /><br>
 <input
         type="file"
         accept="image/*"
         onChange="handleFileChange(event)"
-        id="fileInput"
-        style="display: none;"
     />
 <script>
-        function openFileInput() {
-            document.getElementById('fileInput').click();
-        }
-
         function handleFileChange(event) {
                 alert(`${event.target.files.length} files selected: ${event.target.files.map(f => f.name).join(', ')}`);
         }
